@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN PAGE</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <main class="login-card">
+        <header>
+            <h1 class="logo">BRYL</h1>
+            <h2>Welcome Back</h2>
+            <p class="subtitle">Please enter your credentials to log in.</p>
+        </header>
+
+        <form action="#" method="POST">
+            <p class="form-group">
+                <label for="username">Username or Email</label>
+                <input type="text" id="username" name="username" placeholder="Enter your username" required>
+            </p>
+
+            <p class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            </p>
+
+            <section class="form-options">
+                <label class="remember-me" for="remember">
+                    <input type="checkbox" id="remember" name="remember">
+                    <span>Remember me</span>
+                </label>
+                <a href="#" class="forgot-pass">Forgot password?</a>
+            </section>
+
+            <p>
+                <button type="submit" class="btn-submit">Log In</button>
+            </p>
+        </form>
+    </main>
+
+</body>
+</html>

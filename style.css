@@ -1,0 +1,148 @@
+/* Reset & Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+    color: #f8fafc;
+    padding: 1.5rem;
+}
+
+/* Main Container (Card) */
+main.login-card {
+    background: rgba(30, 41, 59, 0.7);
+    backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    width: 100%;
+    max-width: 420px;
+    padding: 2.5rem 2rem;
+    border-radius: 16px;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.4), 0 8px 10px -6px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+/* Header & Logo */
+header {
+    margin-bottom: 1.75rem;
+}
+
+.logo {
+    font-size: 2.25rem;
+    font-weight: 800;
+    letter-spacing: 0.15em;
+    background: linear-gradient(135deg, #38bdf8 0%, #818cf8 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 0.5rem;
+}
+
+header h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 0.25rem;
+}
+
+.subtitle {
+    font-size: 0.875rem;
+    color: #94a3b8;
+}
+
+/* Form Fields */
+.form-group {
+    text-align: left;
+    margin-bottom: 1.25rem;
+}
+
+.form-group label {
+    display: block;
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: #cbd5e1;
+    margin-bottom: 0.5rem;
+}
+
+.form-group input[type="text"],
+.form-group input[type="password"] {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    background: #0f172a;
+    border: 1px solid #334155;
+    border-radius: 8px;
+    color: #f8fafc;
+    font-size: 0.95rem;
+    transition: all 0.2s ease;
+    outline: none;
+}
+
+.form-group input:focus {
+    border-color: #38bdf8;
+    box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.15);
+}
+
+/* Checkbox & Options */
+.form-options {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+    font-size: 0.85rem;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #94a3b8;
+    cursor: pointer;
+}
+
+.remember-me input[type="checkbox"] {
+    accent-color: #38bdf8;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+.forgot-pass {
+    color: #38bdf8;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.forgot-pass:hover {
+    color: #818cf8;
+    text-decoration: underline;
+}
+
+/* Submit Button */
+.btn-submit {
+    width: 100%;
+    padding: 0.85rem;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(135deg, #38bdf8 0%, #6366f1 100%);
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.15s ease, box-shadow 0.2s ease;
+}
+
+.btn-submit:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 10px 15px -3px rgba(56, 189, 248, 0.3);
+}
+
+.btn-submit:active {
+    transform: translateY(0);
+}
