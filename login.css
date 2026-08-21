@@ -29,6 +29,16 @@ main.login-card {
     text-align: center;
 }
 
+/* Login Logo */
+.login-logo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid rgba(56, 189, 248, 0.4);
+    margin-bottom: 0.75rem;
+}
+
 /* Header & Logo */
 header {
     margin-bottom: 1.75rem;
